@@ -1,14 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap');
+
 body{
     margin: 0;
     font-family: 'arial', sans-serif;
 }
+
+h1, h2, h3, h4{
+   font-family: "Texturina", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 a{
     text-decoration: none;
 }
+
+/* NAV */
 nav{
-    background: grey;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 32px;
+    background: black;
+       display: flex;
+           height: 100px;
+   /* width: 100%; */
+   justify-content: space-between;
+   align-items: center;
+   padding: 16px 32px;
+   box-shadow: 0px -5px 12px 7px #464646;
 }
+
+nav img{
+width:100px;
+}
+nav ul{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 16px;
+   list-style: none;
+   width: 60%;
+   padding: 0;
+   margin: 0;
+}
+nav a{
+   color: white;
+   white-space: nowrap;
+}
+/* HEADER */
+.header-content{
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    gap: 5%;
+}
+.first-image{
+    display: flex;
+    justify-content:flex-end;
+    width: 50%;
+    height: auto;
+}
+.button{
+   display: flex;
+   text-decoration: none;
+   color: blueviolet;
+   border-radius: 8px;
+   width: fit-content;
+   height: fit-content;
+   padding: 8px 16px;
+   border: 2px solid blueviolet;
+   transition: all .3s ease-in-out;
+}
+.button.primary{
+   background: blueviolet;
+   color: white;
+}
+.button.primary:hover{
+  background: rgb(169, 121, 214); 
+  border-color: rgb(169, 121, 214);
+}
+
+
+#competences{
+       background:hsl(0, 0%, 90%);
+   box-shadow: 0px -5px 12px 7px #464646;
+}
+
+
+.cards-container-competences{
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   justify-content: center;
+   padding: 5%;
+   
+}
+.competence-image{
+    height: 200px;
+}
+.cards-container-realisations{
+    display: flex;
+    
+   gap: 10px;
+   align-items: center;
+   justify-content: center;
+   padding: 5%;
+}
+.realisations{
+     height: 200px;
+}
+.cards-container-avis{
+    display: flex;
+   gap: 10px;
+   align-items: center;
+   justify-content: center; 
+   padding: 5%;
+}
+.avis{
+    width: 56px;
+   height: 56px;
+   border-radius: 100%;
+   border: 2px solid black;
+}
+
+.avis-5etoiles{
+    width: 50px;
+}
+
+#Temoignages h2, #realisations h2, #competences h2{
+text-align: center;
+padding-top: 2%;
+}
+#Temoignages{
+    display: flex;
+    background:hsl(0, 0%, 90%) ;  
+   box-shadow: 0px -5px 12px 7px #464646;
+   flex-direction: column; 
+}
+footer{
+    display: flex;
+    background: black;
+    color: white;
+    box-shadow: 0px -5px 12px 7px #464646;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+.social-media{
+    display: flex;
+    gap: 30px;
+}
+.together h2{
+    display: flex;
+    width: 50%;
+}
+.together{
+    width: 50%;
+}
+
+  
